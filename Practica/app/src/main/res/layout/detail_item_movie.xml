@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/detail_movie">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                android:text="Título film"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:paddingTop="8dp"
+                tools:textAlignment="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/posterMovie"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:paddingBottom="16dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Fecha estreno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/subtitle"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:paddingLeft="16dp" />
+
+                <TextView
+                    android:text="#.##"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rating"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:paddingRight="16dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:text="Título original"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tituloOriginal"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:paddingLeft="16dp"
+                android:lineSpacingMultiplier="1.1" />
+
+            <TextView
+                android:text="Sinopsis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Sinopsis"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_marginLeft="16dp"
+                android:paddingTop="8dp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:text="Descripción"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/description"
+                android:textSize="15sp"
+                android:paddingTop="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imagenMovie"
+                android:layout_weight="1"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
