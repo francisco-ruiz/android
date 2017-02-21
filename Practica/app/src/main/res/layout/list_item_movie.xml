@@ -27,6 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="5.0"
+            android:textColor="@color/colorGreyLight"
             android:layout_weight="1" />
 
     </LinearLayout>
@@ -63,6 +64,7 @@
             android:layout_height="160dp"
             android:maxLines="3"
             android:paddingRight="16dp"
+            android:textColor="@color/colorGreyLight"
             android:layout_weight="1" />
 
     </LinearLayout>

@@ -40,6 +40,7 @@
             android:maxLines="3"
             android:paddingRight="16dp"
             android:layout_weight="1"
+            android:textColor="@color/colorGreyLight"
             android:textSize="13sp" />
 
         <ImageView
